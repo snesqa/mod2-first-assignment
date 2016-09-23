@@ -1,0 +1,94 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i';
+/* Style for mod2 ex1 by Snezana Ilic - multimedia design cphbusiness academy 2016 */
+*{margin:0;
+	padding:0;}
+body{
+	font-family:'Open-Sans', sans-serif;
+}
+.wrapper{
+	width:1000px;
+	min-height:500px;
+	margin:0 auto;
+	
+}
+nav{
+	width:1000px;
+	height:40px;
+	border-bottom:1px solid #CCCCCC;
+	list-style:none;
+	margin:0 auto;
+	text-align: center;
+}
+nav ul{
+	list-style-type:none;
+	width:370px;
+	margin:auto;
+}
+nav li{
+	float:left;
+	list-style:none;
+	margin:0 auto;
+	height:40px;
+	line-height:40px;
+	font-size:1.4em;
+	padding: 0 3%;
+	}
+nav li a{
+	text-decoration:none;
+	color: #202E67;
+}
+li:nth-child(1) a.active{
+	color: #EC3ABA;
+}
+li:nth-child(2) a.active{
+	color: #30F6EF;
+}
+li:nth-child(3) a.active{
+	color: #FA731F;
+}
+li:nth-child(4) a.active{
+	color: #6C4CED;
+}
+#content{
+	width:1000px;
+	min-height:500px;
+	margin:0 auto;
+	 
+}
+section{
+	width:33%;
+	height:545px;
+	border-right:1px dotted #000;
+	background-color: #E3DDDD;
+	float:left;
+}
+section:nth-child(2){
+	width:33%;
+	height:545px;
+	border-right:1px dotted #000;
+	background-color:#cccccc;
+	float:left;
+}
+section:nth-child(3){
+	width:33%;
+	height:545px;
+	border-right:1px dotted #000;
+	background-color: #BFB3B3;
+	float:left;
+}
+
+#content h1{
+	text-align:center; 
+	margin-top:2%;
+	font-style:italic;
+}
+
+#footer-info{	
+	width:100%;
+	min-height:50px;
+	border-top:1px solid #CCCCCC;
+	float:left;
+	line-height:50px;
+	text-align:center;
+	color:#1B3B80;
+}
