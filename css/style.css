@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i';
 /* Style for mod2 ex1 by Snezana Ilic - multimedia design cphbusiness academy 2016 */
-*{margin:0;
-	padding:0;}
+*{margin:0;	padding:0;}
 body{
 	font-family:'Open-Sans', sans-serif;
 }
@@ -37,17 +36,18 @@ nav li a{
 	text-decoration:none;
 	color: #202E67;
 }
+/*nth:child() - allows to target a specific element, giving the menu links different active state colours*/ 
 li:nth-child(1) a.active{
-	color: #EC3ABA;
+	color: #f440d3;
 }
 li:nth-child(2) a.active{
-	color: #30F6EF;
+	color: #2bb2fc;
 }
 li:nth-child(3) a.active{
-	color: #FA731F;
+	color: #f9b630;
 }
 li:nth-child(4) a.active{
-	color: #6C4CED;
+	color: #41f266;
 }
 #content{
 	width:1000px;
@@ -55,32 +55,16 @@ li:nth-child(4) a.active{
 	margin:0 auto;
 	 
 }
-section{
-	width:33%;
-	height:545px;
-	border-right:1px dotted #000;
-	background-color: #E3DDDD;
-	float:left;
-}
-section:nth-child(2){
-	width:33%;
-	height:545px;
-	border-right:1px dotted #000;
-	background-color:#cccccc;
-	float:left;
-}
-section:nth-child(3){
-	width:33%;
-	height:545px;
-	border-right:1px dotted #000;
-	background-color: #BFB3B3;
-	float:left;
-}
-
 #content h1{
 	text-align:center; 
 	margin-top:2%;
 	font-style:italic;
+}
+#content h2{
+	text-align:center; 
+	margin-top:2%;
+	font-style:italic;
+	color:#0A1856;
 }
 
 #footer-info{	
