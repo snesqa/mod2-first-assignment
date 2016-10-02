@@ -5,18 +5,25 @@ body{
 	font-family:'Open-Sans', sans-serif;
 }
 .wrapper{
-	width:1000px;
+	width:60em;
 	min-height:500px;
 	margin:0 auto;
 	
 }
+
 nav{
-	width:1000px;
-	height:40px;
+	width:60em;
+	height:5em;
 	border-bottom:1px solid #CCCCCC;
 	list-style:none;
 	margin:0 auto;
 	text-align: center;
+}
+.companyname{ 
+	width: 0em;
+	font-size: 2em; 
+	margin: 1%;
+
 }
 nav ul{
 	list-style-type:none;
@@ -50,19 +57,19 @@ li:nth-child(4) a.active{
 	color: #41f266;
 }
 #content{
-	width:1000px;
+	width:50em;
 	min-height:500px;
 	margin:0 auto;
 	 
 }
 #content h1{
 	text-align:center; 
-	margin-top:2%;
+	margin-top:.5em;
 	font-style:italic;
 }
 #content h2{
 	text-align:center; 
-	margin-top:2%;
+	margin-top:.5em;
 	font-style:italic;
 	color:#0A1856;
 }
@@ -76,3 +83,18 @@ li:nth-child(4) a.active{
 	text-align:center;
 	color:#1B3B80;
 }
+
+table {
+  	border-collapse: collapse;
+}
+
+td, th {
+	border-spacing: 0.5rem;
+	
+	padding: 0.2rem 0.4em;
+	text-align: left;
+}
+th{ border-bottom: 1px solid #333;  background-color: #eee;}
+
+
+

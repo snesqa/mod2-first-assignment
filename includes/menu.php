@@ -18,9 +18,12 @@ a php conditional statment checking which site is active currently, and highligh
 style class="active". The style rules are defined in style.css located in the css folder on root level.
 
 -->
-<ul>
-	<li><a href="index.php" <?php if($current == 'index.php'){ echo 'class="active"';} ?>>Home</a></li>
-    <li><a href="me.php" <?php if($current == 'me.php'){ echo 'class="active"';} ?>>About</a></li>
-    <li><a href="project.php" <?php if($current == 'project.php'){ echo 'class="active"';} ?>>Projects</a></li>
-    <li><a href="contact.php" <?php if($current == 'contact.php'){ echo 'class="active"';} ?>>Contact</a></li>
-</ul>
+<nav>
+	<div class="companyname">WebDevelopers</div>
+	<ul>
+		<li><a href="index.php" <?php if($current == 'index.php'){ echo 'class="active"';} ?>>Home</a></li>
+	    <li><a href="project.php" <?php if($current == 'project.php'){ echo 'class="active"';} ?>>Projects</a></li>
+	    <li><a href="about.php" <?php if($current == 'about.php'){ echo 'class="active"';} ?>>About</a></li>
+	    <li><a href="contact.php" <?php if($current == 'contact.php'){ echo 'class="active"';} ?>>Contact</a></li>
+	</ul>
+</nav>
