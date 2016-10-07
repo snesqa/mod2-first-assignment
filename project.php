@@ -16,32 +16,31 @@ The include expression includes the file where the code(<?php// include 'include
 <table>
 <thead>
 	<tr>
-		<th colspan="2">Client</th>
 		<th colspan="2">Project</th>
-		<th colspan="2">Employee</th>
+		<th colspan="2">Client</th>
+		
 	</tr>
 </thead> 
-	<?php require_once 'conn.php'; ?>
-	<?php
-		$stmt = $link->prepare("SELECT customer_name, project_name, resource_name
+	<?php require_once 'conn.php'; 
+
+		$stmt = $link->prepare("SELECT customer_name, project_name, project_id
 								FROM project_has_resource 
 								JOIN project
 								ON project.project_id = project_has_resource.project_project_id
 								JOIN customer
-								ON customer.customer_id = project.customer_customer_id
-								JOIN resource
-								ON resource.resource_id = project_has_resource.resource_resource_id;");
+								ON customer.customer_id = project.customer_customer_id");
 		$stmt->execute();
-		$stmt->bind_result($projectname, $customername, $resourcename);
+		$stmt->bind_result($projectname, $customername, $pid );
 		while($stmt->fetch()) {
 		//echo $customername . ' : '.$projectname.' : '.$resourcename.'<br/>'.PHP_EOL;
 		echo '<tr class="alt" ><td colspan="2">' .$customername . '</td> 
-							   <td td colspan="2">'.$projectname.'</td>
-							   <td colspan="2">' .$resourcename . '</td></tr>';
+							   
+		<td colspan="2"><a href="projectdetails.php?pid=' .$pid . '">'.$projectname.'</a></td></tr>';
 		}
 
 
 
+/*
 
 		//Create new project
 		$sql = "INSERT INTO projects (project_id, project_name, project_description, p_otherDetails, customer_customer_id) VALUES (null,'So ein ding', 'Web event','Anti web Survailance campagn','13')";
@@ -49,6 +48,8 @@ The include expression includes the file where the code(<?php// include 'include
 		$stmt->bind_param('si', $n, $y);
 		$stmt->execute();
 		echo 'inserted '.$n.' as id:'.($stmt->insert_id);
+*/
+
 	?>
 
 </table>
